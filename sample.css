@@ -1,0 +1,148 @@
+
+/* Basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: pink;
+  background: #f8fafc;
+}
+
+/* Navigation bar */
+header {
+  background: #0f172a;
+  padding: 18px 8%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  color: #60a5fa;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #60a5fa;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #dbeafe, #ede9fe);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+.hero p {
+  max-width: 550px;
+  margin: 0 auto 28px;
+  color: #475569;
+}
+
+.btn {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: aqua;
+  color: green;
+}
+
+/* Service cards */
+.services {
+  padding: 65px 8%;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #0f172a10;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.card h3 {
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+
+/* Mobile screens */
+@media (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero {
+    padding: 70px 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
