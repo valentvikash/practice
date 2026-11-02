@@ -1,0 +1,28 @@
+.card{
+    align-items: center;
+    text-align: center;
+}
+.img{
+    display: grid;
+    size: 10px;
+    gap: 22px;
+}
+#btn{
+    background-color: green;
+    font-size: 25px;
+    height: 20px;
+    width: 300px;
+    border-radius: 10px;
+    padding:10px 20px;
+    size: 50px;
+}
+#btn:hover{
+    cursor: pointer;
+    background-color: aqua;
+   transform: translateY(-20px);
+   transform: scaleX(1.1);
+}
+.div{
+    display: grid;
+    size: 1cm;
+}

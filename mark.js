@@ -1,4 +1,4 @@
-let grade= 45;
+let grade= 89;
 
 
 if(grade > 90 ){    
